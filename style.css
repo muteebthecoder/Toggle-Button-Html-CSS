@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,700;1,600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #483838;
+}
+
+.box {
+    position: relative;
+    width: 400px;
+    border-radius: 15px;
+}
+
+.box .header {
+    position: relative;
+    display: flex;
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.box .header .pic {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.box .header .pic img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.name {
+    padding: 10px;
+}
+
+p {
+    font-weight: 500;
+}
+
+span {
+    font-weight: 600;
+}
+
+.box .toggle {
+    position: relative;
+    background-color: #fff;
+    padding: 30px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.box .toggle ul li {
+    list-style: none;
+}
+
+label {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box .toggle ul li input {
+    display: none;
+}
+
+.switch {
+    position: relative;
+    width: 50px;
+    height: 15px;
+    margin: 5px 10px;
+}
+
+.box .toggle span i {
+    background-color: #73777B;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 15px;
+    transition: .4s;
+}
+
+.box .toggle span i::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    top: -2px;
+    left: 0px;
+    background-color: #383838;
+    transition: 0.4s;
+}
+
+.box .toggle input:checked ~ i {
+    background-color: #C3FF99;
+}
+
+.box .toggle input:checked ~ i:before {
+    transform: translate(30px, 0px);
+    background-color: #3CCF4E;
+}
